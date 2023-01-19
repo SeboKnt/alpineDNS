@@ -1,0 +1,30 @@
+$TTL 2d
+
+$ORIGIN ch13f.de.
+
+@               IN      SOA     ns.ch13f.de. info.ch13f.de. (
+                                2023011902      ; serial
+                                12h             ; refresh
+                                15m             ; retry
+                                3w              ; expire
+                                2h              ; minimum ttl
+                                )
+
+                IN      NS      ns.ch13f.de.
+
+ns              IN      A       49.12.236.130
+
+; -- add dns records below
+
+zwerggans      IN      A       95.217.156.114
+*.zwerggans    IN      A       95.217.156.114
+spatz          IN      A       116.202.8.94
+*.spatz        IN      A       116.202.8.94
+schwalbe       IN      A       23.88.97.13
+*.schwalbe     IN      A       23.88.97.13
+
+; -- wildcard
+
+;*.                       IN      A       23.88.97.13
+;*.ch13f.de.             IN      A       116.202.8.94
+;*.ch13f.de.             IN      A       95.217.156.114
