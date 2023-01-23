@@ -10,7 +10,7 @@ $ORIGIN ch13f.de.
                                 2h              ; minimum ttl
                                 )
 
-                IN      NS      ns.ch13f.de.
+@                IN      NS      ns.ch13f.de.
 
 ns              IN      A       49.12.236.130
 
@@ -25,6 +25,6 @@ schwalbe       IN      A       23.88.97.13
 
 ; -- wildcard
 
-;*.                       IN      A       23.88.97.13
-;*.ch13f.de.             IN      A       116.202.8.94
-;*.ch13f.de.             IN      A       95.217.156.114
+*            IN      A       23.88.97.13
+             IN      A       116.202.8.94
+             IN      A       95.217.156.114
