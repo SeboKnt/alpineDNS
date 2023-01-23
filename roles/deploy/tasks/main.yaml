@@ -1,9 +1,15 @@
 ---
+
+- name: docker compose down
+  community.docker.docker_compose:
+    project_src: /root/dns
+    build: no
+    stopped: yes
+
 - name: copy Docker Compose files
   copy:
     src: files/
     dest: /root/dns
-
 
 # use files parameter to use multiple docker-compose.yml files
 - name: deploy Docker Compose stack
