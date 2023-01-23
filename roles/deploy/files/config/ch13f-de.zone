@@ -4,7 +4,7 @@ $ORIGIN ch13f.de.
 
 ; -- SOA Records
 @               IN      SOA     ns1.ch13f.de. info.ch13f.de. (
-                                2023012302      ; serial
+                                2023012306      ; serial
                                 86400           ; refresh
                                 10800           ; retry
                                 3600000         ; expire
