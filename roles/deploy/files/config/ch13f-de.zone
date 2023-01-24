@@ -33,8 +33,8 @@ autodiscover    IN      CNAME   mail
 @		        IN	    TXT	    "v=spf1 mx ~all"
 
 ; -- PTR Records --
-;@               2.168.192.IN-ADDR.ARPA.
-;10              IN      PTR     ns.example.com.
+2.168.192.IN-ADDR.ARPA.
+;10             IN      PTR     ns.example.com.
 
 
 ; -- dns records --
