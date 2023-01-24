@@ -4,22 +4,37 @@ $ORIGIN ch13f.de.
 
 ; -- SOA Records --
 @               IN      SOA     ns1.ch13f.de. info.ch13f.de. (
-                                2023012402      ; serial
+                                2023012404      ; serial
                                 86400           ; refresh
                                 10800           ; retry
                                 3600000         ; expire
                                 3               ; minimum ttl
                                 )
 
-; -- MX Records --
-@		        IN	    MX	    mail
-mail            IN      A       78.47.231.118
 
 ; -- NS Records --
 @               IN      NS      ns1.ch13f.de.
 ns1             IN      A       168.119.172.132
 @               IN      NS      ns2.ch13f.de.
 ns2             IN      A       49.12.236.130
+
+
+; -- MX Records --
+@		        IN	    MX	    mail
+mail            IN      A       78.47.231.118
+
+
+; -- CNAME Records --
+autoconfig		IN	    CNAME	mail
+autodiscover    IN      CNAME   mail
+
+
+; -- TXT Records --
+@		        IN	    TXT	    "v=spf1 mx ~all"
+
+; -- PTR Records --
+;@               2.168.192.IN-ADDR.ARPA.
+;10              IN      PTR     ns.example.com.
 
 
 ; -- dns records --
