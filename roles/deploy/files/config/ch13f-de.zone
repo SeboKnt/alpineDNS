@@ -21,7 +21,7 @@ ns2             IN      A       49.12.236.130
 
 ; -- MX Records --
 @		        IN	    MX 10   mail
-mail            IN      A       78.47.231.118
+;mail            IN      A      xxx.xxx.xxx.xxx
 
 
 ; -- CNAME Records --
